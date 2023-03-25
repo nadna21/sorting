@@ -27,9 +27,7 @@ int* selectionSort(int arr[], int length) {
 				arr[i] = arr[j];
 				arr[j] = temp;
 			}
-
 		}
-		
 	}
 	return arr;
 }
@@ -49,9 +47,7 @@ int* insertionSort(int arr[], int length) {
 			}
 			j--;
 		}
-		
 	}
-
 	return arr;
 
 }
@@ -66,7 +62,6 @@ int partition(int arr[], int start ,int end) {
 			temp = arr[j];
 			arr[j] = arr[i];
 			arr[i] = temp;
-				
 		}
 	}
 	temp = arr[j + 1];
@@ -83,7 +78,6 @@ int* quickSort(int arr[], int start, int end) {
 		quickSort(arr, start, idx - 1);
 		quickSort(arr, idx + 1, end);
 	}
-
 	return arr;
 }
 
@@ -99,7 +93,5 @@ int main() {
 	for (int i = 0; i < length; i++) {
 		std::cout << ptr[i] << " ";
 }
-
-
 	return 0;
 }
